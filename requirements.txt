@@ -1,0 +1,13 @@
+torch
+transformers>=4.42
+accelerate
+datasets
+sentencepiece
+sympy
+numpy
+scipy>=1.11
+tqdm
+pyyaml
+pint
+z3-solver
+regex
