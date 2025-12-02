@@ -2,6 +2,8 @@
 Virtual Parameter Synthesis (VPS) experiments for improving the internal mathematical and reasoning capabilities of LLMs
 
 Here is link of colab's whole testing and experiments: https://colab.research.google.com/drive/1WpErVF1rGpzTJi_vm1doaG3N1_aBT1eS
+It's also used for our Idef-mathematics-s A6 model which was also built on Qwen model and it demostated +4-5% of reasoning on IMO inspired geometric problems compared to A5 model.
+Link to our Geometry Intelligence - https://idef-mathematics.com/
 
 
 ## Abstract
@@ -308,17 +310,7 @@ The ephemeral L-BFGS component captures local curvature information. In optimiza
 
 ---
 
-## 11. Limitations and Caveats
 
-1. **No Theoretical Guarantees**: While the mechanisms are principled, there is no formal proof that VPS improves reasoning. Empirical validation is necessary.
-
-2. **Compute Overhead**: The dynamic construction of $U, V$ and the spectral clipping add compute cost per layer. For large-scale deployment, this overhead may be significant.
-
-3. **Hyperparameter Sensitivity**: The system has many interacting hyperparameters ($\gamma$, $\tau$, $r$, $k$, builder choice, etc.). Optimal settings may be task-dependent.
-
-4. **Ephemeral L-BFGS Application**: Using L-BFGS outside a proper optimization loop is unconventional. The small scale factor suggests this is a minor heuristic rather than a core mechanism.
-
-5. **Iterative Refinement Requires Gold Labels**: The full verification loop requires ground truth for feedback. For open-ended generation, only the activation-based mechanisms (SK builder, adaptive policy) are active.
 
 ---
 
