@@ -1,0 +1,17 @@
+import torch, platform, sys, os, subprocess, textwrap
+!nvidia-smi
+print("Python:", sys.version)
+print("Torch :", torch.__version__)
+
+!pip -q install --upgrade pip
+!pip -q install "transformers>=4.42" accelerate datasets sentencepiece sympy numpy "scipy>=1.11" tqdm pyyaml pint z3-solver regex
+
+import os, pathlib
+base = pathlib.Path("vps")
+dirs = [
+    "vpscore", "vpscore/verifiers", "vpscore/utils", "vpscore/data",
+    "scripts", "configs"
+]
+for d in dirs:
+    (base/d).mkdir(parents=True, exist_ok=True)
+print("Created:", [str(base/d) for d in dirs])
