@@ -1,7 +1,9 @@
 # vps-virtual-parameter-synthesis
 Virtual Parameter Synthesis (VPS) experiments for improving the internal mathematical and reasoning capabilities of LLMs
 
-Here is link of colab's whole testing and experiments: https://colab.research.google.com/drive/1WpErVF1rGpzTJi_vm1doaG3N1_aBT1eS
+Here is link of colab's whole testing and experiments: https://colab.research.google.com/drive/1WpErVF1rGpzTJi_vm1doaG3N1_aBT1eS.
+
+
 This VPS configuration is **also used in our Idef-mathematics A6 model**, which is built on top of **Qwen**.  
 In internal evaluations, **A6** achieved a **+4–5% improvement in reasoning accuracy** on **IMO-inspired geometric problems** compared to the previous **A5** model.
 
